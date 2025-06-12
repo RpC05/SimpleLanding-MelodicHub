@@ -72,8 +72,7 @@ function initInterfaceCarousel() {
         const current = interfaces[index];
 
         // Update content with fade effect
-        const content = document.querySelector('.interface-content');
-        const interfaceImage = document.querySelector('.mockup-content');
+        const content = document.querySelector('.interface-content'); 
         console.log("Found mockup-content:", interfaceImage);
         if (!interfaceImage) {
             console.error("mockup-content not found at updateInterface()");

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodicHub - Repositorio Musical con IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i data-lucide="music"></i>
+                </div>
+                <span class="brand-text">MelodicHub</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#features">Características</a>
+                <a href="#pricing">Precios</a>
+                <a href="#community">Comunidad</a>
+                <a href="#docs">Docs</a>
+                <button class="btn btn-primary">Comenzar Gratis</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="floating-note note-1"><i data-lucide="music"></i></div>
+            <div class="floating-note note-2"><i data-lucide="file-music"></i></div>
+            <div class="floating-note note-3"><i data-lucide="piano"></i></div>
+            <div class="floating-note note-4"><i data-lucide="mic"></i></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="brain"></i>
+                    <span>El primer repositorio musical con IA del mundo</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Repositorio con IA<br>
+                    <span class="hero-subtitle">para Partituras</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Sube una foto de tu partitura y nuestra IA la convierte automáticamente en formato digital editable
+                </p>
+                
+                <p class="hero-subdescription">
+                    Colabora en tiempo real, versiona tus composiciones como código y comparte con músicos de todo el mundo
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-large">
+                        <i data-lucide="zap"></i>
+                        Comenzar Gratis Ahora
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <i data-lucide="play"></i>
+                        Ver Demo en Vivo
+                    </button>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i data-lucide="check"></i>
+                        <span>Sin tarjeta de crédito</span>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="shield"></i>
+                        <span>Datos 100% seguros</span>
+                    </div>
+                    <div class="feature-item">
+                        <i data-lucide="users"></i>
+                        <span>+12,500 músicos confían en nosotros</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interface Showcase -->
+    <section class="interface-showcase">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="wand-2"></i>
+                    <span>Tecnología en Acción</span>
+                </div>
+                <h2>Ve Cómo Funciona la Magia</h2>
+                <p>Descubre las interfaces que revolucionarán tu forma de crear música</p>
+            </div>
+            
+            <div class="interface-carousel">
+                <div class="interface-card">
+                    <div class="interface-content">
+                        <div class="interface-counter">01 / 04</div>
+                        <h3 class="interface-title">OCR Musical Inteligente</h3>
+                        <p class="interface-description">
+                            Sube una foto de tu partitura y nuestra IA la convierte automáticamente en formato digital editable
+                        </p>
+                        <ul class="interface-features">
+                            <li>Reconocimiento 99.8% preciso</li>
+                            <li>Soporte para escritura a mano</li>
+                            <li>Corrección automática de errores</li>
+                        </ul>
+                        <button class="btn btn-primary">
+                            Probar Ahora
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="interface-image">
+                        <div class="interface-mockup">
+                            <div class="mockup-header">
+                                <div class="status-dot active"></div>
+                                <div class="status-dot processing"></div>
+                                <div class="status-dot waiting"></div>
+                            </div>
+                            <div class="mockup-content"> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="prevInterface">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <button class="dot active" data-slide="0"></button>
+                        <button class="dot" data-slide="1"></button>
+                        <button class="dot" data-slide="2"></button>
+                        <button class="dot" data-slide="3"></button>
+                    </div>
+                    <button class="carousel-btn next" id="nextInterface">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="12500">0</div>
+                    <div class="stat-label">Músicos Activos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="45000">0</div>
+                    <div class="stat-label">Composiciones</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8900">0</div>
+                    <div class="stat-label">Colaboraciones</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="125000">0</div>
+                    <div class="stat-label">Horas de Música</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-proposition">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué MelodicHub?</h2>
+                <p>La primera plataforma que combina IA, control de versiones y colaboración para músicos</p>
+            </div>
+            
+            <div class="value-grid">
+                <div class="value-card problem">
+                    <div class="value-icon">😤</div>
+                    <h3>El Problema</h3>
+                    <ul>
+                        <li>• Partituras físicas se pierden o dañan</li>
+                        <li>• Colaboración musical es complicada</li>
+                        <li>• No hay historial de cambios</li>
+                        <li>• Digitalización manual toma horas</li>
+                    </ul>
+                </div>
+                
+                <div class="value-card solution">
+                    <div class="value-icon">
+                        <i data-lucide="brain"></i>
+                    </div>
+                    <h3>Nuestra Solución</h3>
+                    <ul>
+                        <li>• OCR con IA 99.8% preciso</li>
+                        <li>• Colaboración en tiempo real</li>
+                        <li>• Control de versiones como Git</li>
+                        <li>• Digitalización en segundos</li>
+                    </ul>
+                </div>
+                
+                <div class="value-card result">
+                    <div class="value-icon">🚀</div>
+                    <h3>El Resultado</h3>
+                    <ul>
+                        <li>• 10x más rápido crear música</li>
+                        <li>• Colaboración global sin límites</li>
+                        <li>• Partituras nunca se pierden</li>
+                        <li>• Flujo de trabajo profesional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Timeline -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cómo Funciona</h2>
+                <p>De la partitura física a la colaboración global en 4 pasos simples</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="step-header">
+                            <div class="step-icon gradient-blue">
+                                <i data-lucide="camera"></i>
+                            </div>
+                            <div class="step-number">01</div>
+                        </div>
+                        <h3>Sube tu partitura</h3>
+                        <p>Fotografía, escanea o sube directamente tu partitura</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="step-header">
+                            <div class="step-icon gradient-purple">
+                                <i data-lucide="sparkles"></i>
+                            </div>
+                            <div class="step-number">02</div>
+                        </div>
+                        <h3>IA la transcribe</h3>
+                        <p>Nuestro OCR musical convierte la imagen en formato editable</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="step-header">
+                            <div class="step-icon gradient-green">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <div class="step-number">03</div>
+                        </div>
+                        <h3>Edita y colabora</h3>
+                        <p>Usa nuestro editor profesional y invita a otros músicos</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="step-header">
+                            <div class="step-icon gradient-orange">
+                                <i data-lucide="share-2"></i>
+                            </div>
+                            <div class="step-number">04</div>
+                        </div>
+                        <h3>Comparte al mundo</h3>
+                        <p>Publica, exporta y distribuye tu música globalmente</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Características Revolucionarias</h2>
+                <p>Tecnología de vanguardia al servicio de tu creatividad musical</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon gradient-blue">
+                        <i data-lucide="scan"></i>
+                    </div>
+                    <h3>OCR Musical Avanzado</h3>
+                    <p>Convierte cualquier partitura física en formato digital editable con IA</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon gradient-purple">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Colaboración en Tiempo Real</h3>
+                    <p>Edita partituras con músicos de todo el mundo simultáneamente</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon gradient-green">
+                        <i data-lucide="git-branch"></i>
+                    </div>
+                    <h3>Control de Versiones Musical</h3>
+                    <p>Historial completo de cambios, ramas y fusiones como en GitHub</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon gradient-orange">
+                        <i data-lucide="volume-2"></i>
+                    </div>
+                    <h3>Reproducción Inteligente</h3>
+                    <p>Escucha tus composiciones con instrumentos virtuales realistas</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon gradient-teal">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3>Comunidad Global</h3>
+                    <p>Conecta con compositores, intérpretes y productores mundialmente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para revolucionar tu música?</h2>
+                <p>Únete a más de 12,500 músicos que ya están creando el futuro de la música</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-secondary btn-large">
+                        <i data-lucide="zap"></i>
+                        Comenzar Gratis Ahora
+                    </button>
+                    <button class="btn btn-outline-white btn-large">
+                        <i data-lucide="message-square"></i>
+                        Hablar con Ventas
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i data-lucide="check"></i>
+                        <span>Sin tarjeta de crédito</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i data-lucide="shield"></i>
+                        <span>Datos 100% seguros</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i data-lucide="heart"></i>
+                        <span>Soporte 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <i data-lucide="music"></i>
+                        </div>
+                        <span class="brand-text">MelodicHub</span>
+                    </div>
+                    <p>El primer repositorio musical con IA del mundo. Revolucionando la creación musical con tecnología de vanguardia.</p>
+                    <div class="footer-apps">
+                        <button class="btn btn-outline btn-small">
+                            <i data-lucide="download"></i>
+                            iOS App
+                        </button>
+                        <button class="btn btn-outline btn-small">
+                            <i data-lucide="download"></i>
+                            Android App
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Producto</h4>
+                        <ul>
+                            <li><a href="#">Características</a></li>
+                            <li><a href="#">Precios</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Integraciones</a></li>
+                            <li><a href="#">Seguridad</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Comunidad</h4>
+                        <ul>
+                            <li><a href="#">Foros</a></li>
+                            <li><a href="#">Eventos</a></li>
+                            <li><a href="#">Tutoriales</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Carreras</a></li>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 MelodicHub. Todos los derechos reservados. El futuro de la música comienza aquí.
+                </div>
+                <div class="footer-badges">
+                    <div class="badge">
+                        <i data-lucide="brain"></i>
+                        <span>Powered by AI</span>
+                    </div>
+                    <div class="badge">
+                        <i data-lucide="award"></i>
+                        <span>Premio TechCrunch 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1152,3 +1152,14 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-foreground);
 }
+
+section iframe {
+    display: block;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 960px;
+    height: 540px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
